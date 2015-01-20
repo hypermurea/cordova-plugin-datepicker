@@ -168,6 +168,7 @@ public class DatePickerPlugin extends CordovaPlugin {
 						DatePicker pickerView = null;
 						try {
 							pickerView = (DatePicker) mDatePickerField.get(dateDialog);
+							pickerView.setCalendarViewShown(true);
 						} catch (IllegalArgumentException e) {
 							e.printStackTrace();
 						} catch (IllegalAccessException e) {
